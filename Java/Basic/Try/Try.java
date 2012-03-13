@@ -1,4 +1,4 @@
-class Hello
+class Try
 {
   public static void main(String a[])
   {
