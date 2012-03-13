@@ -1,0 +1,6 @@
+/* Notes
+ * Don't go beyond one letter
+ * UNTIL you know and can make
+ * and use methods...
+ * subject of methods subsection
+ * /

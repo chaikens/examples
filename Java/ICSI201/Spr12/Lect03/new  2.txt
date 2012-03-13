@@ -1,0 +1,10 @@
+Welcome to DrJava.  Working directory is E:\201Stuff\bookClasses-7-22-09\bookClasses
+> World myworld;
+> myworld = new World();
+> Turtle myturt;
+> System.out.println( myturt );
+null
+> myturt  =  new Turtle(myworld);
+> System.out.println( myturt );
+No name turtle at 320, 240 heading 0.0.
+> 
