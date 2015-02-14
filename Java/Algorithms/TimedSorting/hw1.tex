@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{hyperref}
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headheight}{0.0in}
+\setlength{\headsep}{0.0in}
+
+\begin{document}
+\begin{center}
+ICSI403 Algorithms Spring 2011 Chaiken\hfill
+Homework 1\hfill
+Assigned 1/20\hfill
+Due 1/27\\
+Note: There will be 3 kinds of HW problems: Theory (T), Programming (P) and
+Experiments (E).
+\end{center}
+
+\begin{itemize}
+
+\item[T1.] \textbf{(Submit on PAPER)}
+CLRS Exercise 2.1-1 (Illustrate INSERTION-SORT).
+\item[P1.] \textbf{(Submit on BLACKBOARD)}
+Add to my \texttt{SortableArray} Java program your implementation
+of INSERTION-SORT as described in CLRS.  Download the .java files for the
+\texttt{SortableArray} and \texttt{Stopwatch} classes from the web site
+\url{http://www.cs.albany.edu/~sdc/CSI403}.  But use
+subscripts starting with zero rather than 1 as in CLRS.
+\end{itemize}
+
+\textbf{All} assignments (this and future)
+to modify a program and/or create your own
+program must meet the following requirements for credit:
+\begin{enumerate}
+\item All the .java files (including copies you have not modified)
+needed to compile and demonstrate your work must be submitted on Blackboard.
+\item The .java files together must be compilable (with no errors!) when
+the command ``\verb|javac *.java|'' is given in a directory containing them
+all, after any submitted .class files have been removed.  
+The problem gets zero credit if compiling fails! (In a senior level CS 
+course, you are expected to be able to find and correct syntax and
+missing class errors when they are detected by the compiler and
+the JVM!)
+\item Your submission must include one or more text files, documents 
+(preferably in .pdf), screen shots, etc. that report how you tested all
+the functionality of your code.  For full credit, tests must be reported
+of trivial problem sizes, small sizes and sizes large enough to be generic.
+Similarly, if input data is used, tests on both data for special cases and
+generic data must be done.  (Examples of special case data for sorting are
+a file of already sorted numbers and a file of many copies of the same number.)
+\item One of the files submitted must be named ``ReadMeFirst'' (with the
+appropriate extension) and it must guide who's grading your work how to
+evaluate it.  If you like, you can put all your test reports in the 
+``ReadMeFirst'' document.  Hint: Keep a written journal document
+while you work, from
+beginning to end.  Then, when you are done assuring yourself that your 
+code is bug-free, your report will be finished!
+\item Faked test reports are considered to be \textbf{cheating}!  
+If you cannot complete a correct program, submitting a compilable
+and testable program with bugs plus a report of your progress, including
+where you got stuck, will earn partial credit.
+\end{enumerate}
+
+
+\begin{itemize}
+\item[T2.] \textbf{(Submit on PAPER)}
+CLRS Exercise 2.3-1 (Illustrate MERGE-SORT).
+\item[E1.] \textbf{(Submit on PAPER)}
+For my two sorting algorithm implementations, plus your
+implementation of insertion-sort if you finish it (correctly!), gather
+timing results for input sizes in the 1, 2, 5, 10, 20, 50, 100, 200, ... 
+series up to the largest sizes your program can handle in a reasonable amount
+of time.  Specifically, do timings for sizes up to those that either crash 
+your Java run or take more than 10 minutes.  Plot all results on linear
+plus log-log graph paper so that they are clearly presented both for 
+small and for large problem sizes.  A linear plot for times up to 1 second
+should be included.  
+
+Do all the timings on the same computer, with the computer running as
+few other programs as possible.  Include a report of the model of
+computer processor, sizes of caches, clock frequency (in Gigahertz),
+RAM size, OS, etc., plus the version of the Java compiler and the Java
+virtual machine (JVM).  (You can get that information by running the
+commands ``\verb|javac -version| and ``\verb|java -showversion|'').
+Also report in detail if you increased the memory used by the JVM.
+
+Graph paper is supplied and you can print more from the course web site.
+
+\item[T3.] \textbf{(Submit on PAPER)}
+CLRS Exercise 2.3-7 ($\Theta(n \log n)$ algorithm to tell if
+some two numbers in a length $n$ array add up to $x$) Hint: First sort the
+array. You will get 80\% of the problem credit if you turn in a few
+pages of scratch work in which you try out algorithmic ideas on examples of
+sorted arrays.  The remaining 20\% will be awarded for a clear and correct
+algorithm description in English and/or pseudo-code together with an
+explanation of why it works.
+\end{itemize}
+\end{document}

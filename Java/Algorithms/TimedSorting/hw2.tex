@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage{hyperref}
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headheight}{0.0in}
+\setlength{\headsep}{0.0in}
+
+\begin{document}
+\begin{center}
+ICSI403 Algorithms Spring 2011 Chaiken\hfill
+Homework 2\hfill
+Assigned 1/27\hfill
+Due 2/3\\
+Note: There will be 3 kinds of HW problems: Theory (T), Programming (P) and
+Experiments (E).  Reminder: Keep a written log of your work; when you are 
+done with the programming and/or computing, you will then be almost 
+done with the homework!
+\end{center}
+
+\begin{itemize}
+
+\item[P1.] Add to my \texttt{SortableArray} Java program your implementation
+of MERGE-SORT as described in CLRS.  (You can build on your Homework 1 code 
+or start afresh.) Follow the directions given in
+Homework 1.  Your implementation should differ from mine in two ways:
+\begin{enumerate}
+\item The MERGE procedure should allocate (i.e., instantiate with 
+\verb|new int[...]| where \verb|...| is the appropriate size) two new
+arrays \texttt{L} and \texttt{R}, instead of using the pre-allocated
+array which my code has.
+
+\item The MERGE procedure should use a sentinel.  Make sure your test data
+generator does not generate the sentinel value! Hint: In Java,
+\texttt{0x7FFFFFF} will give the largest positive int value, since Java ints
+always use 32-bit 2-s complement binary.  
+ 
+\end{enumerate}
+
+\item[E1.] Follow the directions of \textbf{E1.} from Homework 1 to compare
+the running times of my MERGE-SORT implementation with your implementation
+of MERGE-SORT from the above problem.  More graph paper is attached.
+Write a short report in English that answers what differences in run
+time and in what size problems are successfully solved it makes to
+use the two given different implementation details.  
+
+Use only one computer and put in your report the system 
+information listed in Homework 1.
+
+\item[T2.] CLRS Problem 2-1 (MERGE-SORT) with larger base cases.)
+
+\item[P2.] In CLRS Problem 2-1, $k$ could be a contant.  Modify my
+MERGE-SORT implementation so that calls INSERTION-SORT from
+MERGE-SORT whenever the subarray to sort has $k$ or fewer elements.
+
+
+\item[E2.]  Determine experimentally, as well as you can, 
+the best value for constant $k$ to reduce the running time 
+of your implementation of MERGE-SORT from problem \textbf{E2.} above.
+Just do it for large but reasonably sized problems; the run times
+should be a few seconds.  (You can use shorter times if your computer
+is so fast that it runs out of memory for problems taking several seconds.
+Also try to avoid complicating the problem with sizes that make the OS
+swap memory onto the disk.  If you end up working with run times under
+1 second, explain in your report why you didn't use larger problems.)
+
+Do all the experimentation on only one computer; try to keep its
+load from other programs minimal and constant during your experimentation. 
+
+Write a report on what values of $k$ you tried, what sizes of 
+problems you addressed,
+and the running times for the combinations of $k$ and problem size you 
+observed.  Specify your best single choice for $k$ and explain why
+you think it is the best.
+Also include the system information listed in 
+Homework 1.
+
+\end{itemize}
+
+\end{document}
+
